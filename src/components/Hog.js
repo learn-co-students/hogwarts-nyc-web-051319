@@ -16,7 +16,7 @@ class Hog extends React.Component{
     let hogName = this.props.hog.name.split(' ').join('_').toLowerCase()
     let weight = this.props.hog['weight as a ratio of hog to LG - 24.7 Cu. Ft. French Door Refrigerator with Thru-the-Door Ice and Water']
     return(
-      <div>
+      <div className="pigTile">
         <h2>{this.props.hog.name}</h2>
         <img src={`hog-imgs/${hogName}.jpg`}/>
         <p>{this.props.hog.specialty}</p>
@@ -30,7 +30,7 @@ class Hog extends React.Component{
   renderDefault = () => {
     let hogName = this.props.hog.name.split(' ').join('_').toLowerCase()
     return (
-      <div>
+      <div className="pigTile">
         <h2>{this.props.hog.name}</h2>
         <img src={`hog-imgs/${hogName}.jpg`}/>
       </div>
